@@ -30,8 +30,8 @@
                 var txt = txt;
                 var verbs = [];
                 var clearVerbs = [];
-                var reSearch = new RegExp( "( |)(" + matchTemplates.join("|") + ")( )(\\w+)","ig");
-                var reDelete = new RegExp( "( |)(" + matchTemplates.join("|") + ")( )","ig");
+                var reSearch = new RegExp( "( |^)(" + matchTemplates.join("|") + ")( )(\\w+)","ig");
+                var reDelete = new RegExp( "( |^)(" + matchTemplates.join("|") + ")( )","ig");
                 
                 verbs = verbs.concat( txt.match( reSearch ) );
                 
